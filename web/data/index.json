@@ -1,0 +1,30 @@
+{
+ "town": "town.json",
+ "routes": [
+  {
+   "place": "roses",
+   "file": "routes/roses.json",
+   "frames": 293
+  },
+  {
+   "place": "tomatoes",
+   "file": "routes/tomatoes.json",
+   "frames": 635
+  },
+  {
+   "place": "herbs",
+   "file": "routes/herbs.json",
+   "frames": 791
+  },
+  {
+   "place": "lavender",
+   "file": "routes/lavender.json",
+   "frames": 309
+  },
+  {
+   "place": "apple_tree",
+   "file": "routes/apple_tree.json",
+   "frames": 465
+  }
+ ]
+}

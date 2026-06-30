@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Garden Tending Robot - browser player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="head">
+      <h1 data-i18n="title">Garden Tending Robot</h1>
+      <p class="sub" data-i18n="subtitle">
+        A small JS player replaying the watering/fertilizing routes the Python engine planned.
+      </p>
+    </header>
+
+    <div class="controls">
+      <label class="field">
+        <span data-i18n="destination">Plant</span>
+        <select id="dest"></select>
+      </label>
+
+      <div class="buttons">
+        <button id="play" type="button" data-i18n="play">Play</button>
+        <button id="restart" type="button" data-i18n="restart">Restart</button>
+      </div>
+
+      <label class="field speed">
+        <span><span data-i18n="speed">Speed</span> <output id="speedOut">1.0x</output></span>
+        <input id="speed" type="range" min="0.25" max="3" step="0.25" value="1" />
+      </label>
+
+      <button id="lang" class="lang" type="button" title="English / 中文">中文</button>
+    </div>
+
+    <canvas id="view" width="842" height="622"></canvas>
+
+    <p class="status" id="status" data-i18n="loading">Loading the engine's data...</p>
+
+    <section class="videowrap">
+      <figure style="margin:0 0 16px;">
+        <img src="competition-run.jpg" alt=""
+             style="width:100%;max-width:842px;display:block;border-radius:10px;" />
+        <figcaption data-i18n="photoCaption"
+                    style="color:#6b7280;font-size:14px;margin-top:6px;">From an actual competition run</figcaption>
+      </figure>
+      <h2 data-i18n="videoTitle">Project video</h2>
+      <video src="project-video.mp4" controls preload="metadata" playsinline
+             style="width:100%;max-width:842px;display:block;border-radius:10px;"></video>
+    </section>
+
+    <footer class="foot">
+      <p data-i18n="note">
+        The engine (Python, with its tests) computes everything. This page is a
+        small canvas player: it loads the exported routes and animates them. It
+        does not re-plan or re-simulate.
+      </p>
+    </footer>
+  </main>
+
+  <script src="player.js"></script>
+</body>
+</html>

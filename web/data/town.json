@@ -1,0 +1,189 @@
+{
+ "width": 820,
+ "height": 600,
+ "margin": 11,
+ "depot": 0,
+ "places": [
+  "depot",
+  "roses",
+  "tomatoes",
+  "herbs",
+  "lavender",
+  "apple_tree"
+ ],
+ "destinations": [
+  "roses",
+  "tomatoes",
+  "herbs",
+  "lavender",
+  "apple_tree"
+ ],
+ "nodes": [
+  {
+   "id": 0,
+   "x": 110.0,
+   "y": 500.0,
+   "place": "depot",
+   "label": "Supply Station",
+   "cargo": ""
+  },
+  {
+   "id": 1,
+   "x": 110.0,
+   "y": 310.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 2,
+   "x": 110.0,
+   "y": 120.0,
+   "place": "roses",
+   "label": "Roses",
+   "cargo": "water"
+  },
+  {
+   "id": 3,
+   "x": 310.0,
+   "y": 120.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 4,
+   "x": 310.0,
+   "y": 310.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 5,
+   "x": 310.0,
+   "y": 500.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 6,
+   "x": 510.0,
+   "y": 500.0,
+   "place": "lavender",
+   "label": "Lavender",
+   "cargo": "fertilizer"
+  },
+  {
+   "id": 7,
+   "x": 510.0,
+   "y": 310.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 8,
+   "x": 510.0,
+   "y": 120.0,
+   "place": "tomatoes",
+   "label": "Tomatoes",
+   "cargo": "fertilizer"
+  },
+  {
+   "id": 9,
+   "x": 710.0,
+   "y": 120.0,
+   "place": "herbs",
+   "label": "Herbs",
+   "cargo": "water"
+  },
+  {
+   "id": 10,
+   "x": 710.0,
+   "y": 310.0,
+   "place": null,
+   "label": null,
+   "cargo": ""
+  },
+  {
+   "id": 11,
+   "x": 710.0,
+   "y": 500.0,
+   "place": "apple_tree",
+   "label": "Apple tree",
+   "cargo": "water"
+  }
+ ],
+ "edges": [
+  [
+   0,
+   1
+  ],
+  [
+   1,
+   2
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   1,
+   4
+  ],
+  [
+   3,
+   4
+  ],
+  [
+   4,
+   5
+  ],
+  [
+   0,
+   5
+  ],
+  [
+   5,
+   6
+  ],
+  [
+   4,
+   7
+  ],
+  [
+   6,
+   7
+  ],
+  [
+   7,
+   8
+  ],
+  [
+   3,
+   8
+  ],
+  [
+   8,
+   9
+  ],
+  [
+   9,
+   10
+  ],
+  [
+   7,
+   10
+  ],
+  [
+   10,
+   11
+  ],
+  [
+   6,
+   11
+  ]
+ ]
+}
